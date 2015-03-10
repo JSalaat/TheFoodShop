@@ -11,17 +11,19 @@
         </div>
         <div class="positive">
           {{item.price}}
-          {{item.dish_quantity[0].price}}
 
         </div>
       </div>
       <div class="item item-divider" ng-click="showTotals()">
         <a class="item item-icon-left" href="#">
           <i class="icon ion-fork"></i>
-          Your Total
-    <span class="item-note positive h3">
-       {{total}}
-    </span>
+
+          <strong class="item-note positive text-left col">
+            Your Total
+          </strong>
+          <strong class="item-note positive ng-binding text-right">
+            {{total}}
+          </strong>
         </a>
       </div>
     </div>

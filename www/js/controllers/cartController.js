@@ -18,7 +18,7 @@ foodShop.controller('cartController', function($scope, $rootScope, $cordovaToast
     }
 
     $scope.showTotals = function(){
-        $cordovaToast.show('Here is a message', 'long', 'bottom')
+        $cordovaToast.show('Your Total is '+$scope.total, 'long', 'bottom')
             .then(function(success) {
                 // success
                 alert('toast Success')
