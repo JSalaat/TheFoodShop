@@ -1,0 +1,36 @@
+<ion-view view-title="{{selectedRes.name}}">
+
+  <ion-content>
+
+    <div class="list card">
+
+      <div class="item item-avatar">
+        <img ng-src="{{selectedRes.img}}">
+        <h2 class="positive">{{selectedRes.name}}</h2>
+        <p>{{selectedRes.address}}</p>
+      </div>
+
+      <ul class="list">
+
+        <li class="item" ng-repeat="item in selectedRes.item">
+
+          <button class=" button-icon ion-android-add" ng-click="addtocart($index)"></button>
+
+          {{item.dish_n}}
+
+          <strong class="positive" style=" float: right;" >
+            {{item.price}}
+            {{item.dish_quantity[0].price}}
+          </strong>
+        </li>
+
+      </ul>
+
+      <a class="item item-icon-left positive" ng-click="changeState()">
+        <i class="icon ion-ios7-cart"></i>
+        View Cart
+      </a>
+
+    </div>
+  </ion-content>
+</ion-view>

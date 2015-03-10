@@ -1,0 +1,31 @@
+<ion-view view-title="The Food Shop">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <h3 class="col text-center">Select a Restuarant</h3>
+    </div>
+
+    <ul>
+
+      <li>
+
+        <div class="list">
+
+          <ion-item ng-repeat="restaurant in restaurants track by $index" class="item item-thumbnail-left" href="#/tab/dash/{{restaurant.id}}">
+
+            <img ng-src="{{ restaurant.img }}">
+            <h2 class="positive item-text-wrap">{{restaurant.name}}</h2>
+            <h5 ng-repeat="type in restaurant.type">{{ type }}</h5>
+
+            <h3 style="float: right">Restaurant Rating: {{restaurant.rating}}</h3>
+
+          </ion-item>
+
+        </div>
+
+      </li>
+
+    </ul>
+
+  </ion-content>
+</ion-view>
