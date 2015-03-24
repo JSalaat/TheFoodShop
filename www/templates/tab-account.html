@@ -1,35 +1,58 @@
 <ion-view title="Account">
-  <ion-content class="has-header padding" ng-show="myUser == undefined">
+  <ion-content class="has-header" ng-show="myUser.token == undefined">
     <div class="list">
-      <label class="item ">
-        <span class="input-label">Email</span>
-        <input type="text" ng-model="user.email">
-      </label>
-      <label class="item" >
-        <span class="input-label" >Password</span>
-        <input type="password" ng-model="user.password">
+
+      <br/>
+      <h1 class="text-center assertive" style="margin-top: 20px;">
+        Log In the Shop
+      </h1>
+
+      <br/>
+
+      <label class=" row item item-input col col-offset-10 col-80 bottomBorderOnly themeBg">
+        <input class="text-center whiteColor" type="text" placeholder="Email" ng-model="user.email">
       </label>
 
-      <button class="button  button-block button-positive" ng-click=" login()">
-        Login
+      <br/>
+
+      <label class="row item item-input col col-offset-10 col-80 bottomBorderOnly themeBg ">
+        <input class="text-center whiteColor" type="password" placeholder="Password" ng-model="user.password">
+      </label>
+
+      <br/>
+      <br/>
+
+
+
+      <div class="row">
+        <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" login()">
+          Login
+        </button>
+      </div>
+
+        <div class="row">
+          <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" register()">
+            Register
+          </button>
+        </div>
+
+      <div class="row">
+        <button class="col col-offset-10 col-80 button button-block button-positive button-outline" ng-click=" fb()">
+        <i class="icon ion-social-facebook"></i> Connect with Facebook
       </button>
-      <button class="button  button-block button-positive" ng-click=" register()">
-        Register
-      </button>
-      <button class="button  button-block button-positive" ng-click=" fb()">
-       <i class="icon ion-social-facebook"></i> Connect with Facebook
-      </button>
+      </div>
+
     </div>
   </ion-content>
 
-  <ion-content class="has-header padding" ng-show="myUser != undefined">
+  <ion-content class="has-header padding" ng-show="myUser.token != undefined">
     <div class="list">
-      <label class="item item-input">
-        <span class="input-label">Login as</span>
+      <label class="item item-input themeBg whiteColor">
+        <span class="input-label whiteColor">Login as</span>
         <span class="">{{ myUser.password.email }}</span>
         <span class="">{{myUser.facebook.displayName}}</span>
       </label>
-      <button class="button  button-block button-assertive" ng-click=" logout()">
+      <button class="button button-outline button-block button-assertive" ng-click=" logout()">
         Logout
       </button>
     </div>

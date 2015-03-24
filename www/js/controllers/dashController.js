@@ -2,7 +2,12 @@
  * Created by M.JUNAID on 2015-03-10.
  */
 
-foodShop.controller('dashController',function($scope, $firebase , $rootScope, $ionicPopup, $state) {
+foodShop.controller('dashController',function($scope, $firebase , $rootScope, $ionicPopup, $state,$ionicLoading) {
+
+    $scope.lsUser = localStorage.getItem('firebase:session::foodpanda-mcc201');
+    $scope.user = JSON.parse($scope.lsUser);
+
+    if($scope.user){
 
     var CON = new Firebase("https://foodpanda-mcc201.firebaseio.com/");
     var resRef = CON.child('restuarants/-Jh39v_3eydHBVdSYWBU');
@@ -10,18 +15,30 @@ foodShop.controller('dashController',function($scope, $firebase , $rootScope, $i
     $rootScope.restaurants = $firebase(resRef).$asArray();
     console.log($rootScope.restaurants);
 
-    $scope.lsUser = localStorage.getItem('firebase:session::foodpanda-mcc201');
-    $scope.user = JSON.parse($scope.lsUser);
+    $scope.show = function() {
+        $ionicLoading.show({
+            template: '<img src="img/output_LoXQFP.gif">'
+        });
+    };
+    $scope.hide = function(){
+        $ionicLoading.hide();
+    };
 
-    $rootScope.cart = [];
+    $scope.show();
 
-    if (!$scope.user){
+    $rootScope.restaurants.$loaded().then(function() {
+        $scope.hide();
+
+    });
+    }
+    else{
         $ionicPopup.alert({
             title: "No User",
             template: "You're not Signed In, Please Sign In Or Register"
         });
         $state.go('tab.account')
     }
+
 
     /*$scope.newRest= {
         "name": "Dunkin Donuts",

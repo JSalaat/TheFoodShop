@@ -2,27 +2,27 @@
   <ion-content>
 
     <div class="card">
-      <div class="item item-divider" >
+      <div class="item item-divider whiteColor" style="background-color: #555555">
         Your Cart
       </div>
-      <div class="item item-text-wrap" ng-repeat="item in cart">
-        <div>
-          {{item.dish_n}}
+      <div class="item item-text-wrap themeBg" ng-repeat="item in cart track by $index">
+        <div class="whiteColor">
+          Item {{$index+1}}: {{item.dish_n}}
         </div>
-        <div class="positive">
-          {{item.price}}
+        <div class="assertive text-right">
+          {{item.price}} Rs
 
         </div>
       </div>
-      <div class="item item-divider" ng-click="showTotals()">
-        <a class="item item-icon-left" href="#">
-          <i class="icon ion-fork"></i>
+      <div class="item item-divider" ng-click="showTotals()" style="background-color: #555555">
+        <a class="item item-icon-left themeBg" href="#">
+          <i class="icon ion-fork whiteColor"></i>
 
-          <strong class="item-note positive text-left col">
+          <span class="item-note assertive text-left col">
             Your Total
-          </strong>
-          <strong class="item-note positive ng-binding text-right">
-            {{total}}
+          </span>
+          <strong class="item-note whiteColor ng-binding text-right" style="font-size: medium;">
+            {{total}} Rs
           </strong>
         </a>
       </div>

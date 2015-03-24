@@ -8,9 +8,11 @@ foodShop.controller('restNameController', function($scope, $rootScope, $ionicPop
 
         $scope.restaurantsdata = $rootScope.restaurants;
 
-        //var id = window.location.hash.substr(11);
+
+
+    //var id = window.location.hash.substr(11);
         var id = $stateParams;
-        console.log($stateParams)
+        console.log($stateParams);
 
         var allRestaurants = $rootScope.restaurants;
 
@@ -24,7 +26,6 @@ foodShop.controller('restNameController', function($scope, $rootScope, $ionicPop
             }
         }
 
-
         $rootScope.addtocart= function(i){
             $rootScope.cart.push( $scope.selectedRes.item[i]);
             $ionicPopup.alert({
@@ -37,4 +38,4 @@ foodShop.controller('restNameController', function($scope, $rootScope, $ionicPop
         $scope.changeState = function(){
             $state.go('tab.cart')
         }
-    })
+    });

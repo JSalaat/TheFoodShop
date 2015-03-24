@@ -1,1 +1,89 @@
 /* Empty. Add your own CSS if you like */
+
+.bottomBorderOnly{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+ion-content{
+    background-color: #333333;
+}
+
+.themeBg{
+    background-color: #333333;
+}
+
+.themeColor{
+    color: #333333;
+}
+
+.whiteColor{
+    color: #ffffff !important;
+}
+
+.item-content{
+    background-color: #333333 !important;
+
+}
+
+.noMargins{
+    margin: 0;
+}
+
+.popup-container .popup {
+    background-color: #333333; !important;
+    opacity: 0.5; !important;
+    border: 1px solid grey;
+}
+
+
+.popup-title{
+    color: #ffffff !important;
+}
+
+.popup-body{
+    color: #ffffff !important;
+}
+
+.item-thumbnail-left{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    margin-top: 1px
+
+}
+
+.button.button-positive{
+    border-color: #e42012;
+    background-color: #ef473a;
+    color: #fff;
+}
+
+.button.button-positive.activated{
+    border-color: #e42012;
+    background-color: #ef473a;
+    color: #fff;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loading{
+    background-color: transparent !important;
+}
+
+.tabs-striped .tabs {
+    background-color: #333333; !important;
+    color:#ffffff !important;
+
+}
+.tab-nav.tabs>a>i{
+    color:#ffffff !important;
+}
+.tab-nav.tabs>a.tab-item-active>i{
+    color:#ef473a !important;
+}
+.tab-nav.tabs{
+    background-color: rgb(51, 51, 51) !important;
+    border-top-color: #ef473a;;
+}
+

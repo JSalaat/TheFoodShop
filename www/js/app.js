@@ -1,8 +1,10 @@
 
 var foodShop = angular.module('foodShop', ['ionic','firebase','ngCordova'])
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
+.run(function($ionicPlatform,$rootScope) {
+      $rootScope.cart = [];
+
+      $ionicPlatform.ready(function() {
     if (window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
     }
@@ -25,6 +27,7 @@ var foodShop = angular.module('foodShop', ['ionic','firebase','ngCordova'])
 
   .state('tab.dash', {
     url: '/dash',
+    cache: false,
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
@@ -66,3 +69,9 @@ var foodShop = angular.module('foodShop', ['ionic','firebase','ngCordova'])
   $urlRouterProvider.otherwise('/tab/account');
 
 });
+
+foodShop.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('bottom');
+
+}]);
