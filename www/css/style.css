@@ -86,4 +86,7 @@ ion-content{
     background-color: rgb(51, 51, 51) !important;
     border-top-color: #ef473a;;
 }
-
+.ratingAlignment{
+    float: right;
+    margin-right: -40px !important;
+}

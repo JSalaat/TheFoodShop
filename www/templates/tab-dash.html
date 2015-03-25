@@ -10,7 +10,7 @@
       <h3 class="col text-center whiteColor">Select a Restaurant</h3>
     </div>
 
-    <div class="row row-center ">
+    <div>
     <ul>
       <li>
 
@@ -19,10 +19,11 @@
           <ion-item ng-repeat="restaurant in restaurants track by $index" class="item item-thumbnail-left item-text-wrap" href="#/tab/dash/{{restaurant.id}}">
 
             <img ng-src="{{ restaurant.img }}">
+            <h3 class="whiteColor text-right ratingAlignment" ><i class="icon ion-star"></i> {{restaurant.rating}}</h3>
 
             <h2 class="assertive item-text-wrap" style="font-weight: bold">{{restaurant.name}}</h2>
-            <h3 class="whiteColor text-right" style="float: right;"><i class="icon ion-star"></i> {{restaurant.rating}}</h3>
             <h5 class="whiteColor" ng-repeat="type in restaurant.type">{{ type }}</h5>
+
 
 
           </ion-item>

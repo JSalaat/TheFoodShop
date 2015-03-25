@@ -163,7 +163,8 @@ foodShop.controller('accountsController', function($scope, $ionicPopup,$ionicLoa
                     $scope.hide()
                 } else {
                     console.log("Authenticated successfully with payload:", authData);
-                    $scope.hide()
+                    $scope.hide();
+                    $scope.myUser = authData;
 
                 }
             });
