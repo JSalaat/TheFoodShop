@@ -1,6 +1,10 @@
 # TheFoodShop
 
 Using Ionic and Firebase It's a Real-Time food court App where user can order food from different restaurants menu.
+With Facebook SignIn Integration.
+Changes occur real time.
+Ionic framwork project.
+Backend on firebase implemented.
 
 # Screen Shots of the App
 
