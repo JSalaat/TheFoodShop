@@ -2,13 +2,13 @@
 
 Using Ionic and Firebase It's a Real-Time food court App where user can order food from different restaurants menu.
 
-With Facebook SignIn Integration.
+With Facebook SignIn Integration and local auth login system.
 
 Changes occur real time.
 
-Ionic framwork project.
+Ionic/cordova framwork project.
 
-Backend on firebase implemented.
+Backend implemention on firebase .
 
 # Screen Shots of the App
 
