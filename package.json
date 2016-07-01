@@ -1,7 +1,8 @@
 {
-  "name": "mychatapp",
-  "version": "1.0.0",
-  "description": "myChatApp: An Ionic project",
+  "name": "TheFoodShop",
+  "version": "1.2.0",
+  "description": "TheFoodShop: An Ionic project",
+  "author": "mjuanidsalaat (M. Junaid Salaat)",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",

@@ -2,6 +2,11 @@
   "name": "myChatApp",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.0-beta.14"
+    "ionic": "driftyco/ionic-bower#1.3.1"
+  },
+  "dependencies": {
+    "angularfire": "1.2.0",
+    "firebase": "2.4.2",
+    "ngCordova": "^0.1.26-alpha"
   }
 }
