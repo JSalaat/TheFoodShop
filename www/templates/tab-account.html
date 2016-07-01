@@ -25,13 +25,13 @@
 
 
       <div class="row">
-        <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" login()">
+        <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" login(user)">
           Login
         </button>
       </div>
 
         <div class="row">
-          <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" register()">
+          <button class="col col-offset-10 col-80 button button-outline button-block button-assertive" ng-click=" register(user)">
             Register
           </button>
         </div>
@@ -50,7 +50,7 @@
       <label class="item item-input themeBg whiteColor">
         <span class="input-label whiteColor">Login as</span>
         <span class="">{{ myUser.password.email }}</span>
-        <span class="">{{myUser.facebook.displayName}}</span>
+        <span class="">{{ myUser.facebook.displayName }}</span>
       </label>
       <button class="button button-outline button-block button-assertive" ng-click=" logout()">
         Logout

@@ -6,12 +6,17 @@
         Your Cart
       </div>
       <div class="item item-text-wrap themeBg" ng-repeat="item in cart track by $index">
-        <div class="whiteColor">
-          Item {{$index+1}}: {{item.dish_n}}
+        <div class="icon-right light">
+          Remove <i class="ion-close-circled "></i>
         </div>
-        <div class="assertive text-right">
-          {{item.price}} Rs
+        <div class="item">
+          <div class="whiteColor">
+            Item {{$index+1}}: {{item.dish_n}}
+          </div>
+          <div class="assertive text-right">
+            {{item.price}} Rs
 
+          </div>
         </div>
       </div>
       <div class="item item-divider" ng-click="showTotals()" style="background-color: #555555">
