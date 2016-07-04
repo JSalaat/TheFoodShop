@@ -37,10 +37,10 @@ var foodShop = angular.module('foodShop', ['ionic','firebase','ngCordova'])
   })
 
   .state('tab.restName', {
-    url: '/dash/:name',
+    url: '/dash/:id',
     views: {
       'tab-dash': {
-        templateUrl: 'templates/tab-restName.html',
+        templateUrl: 'templates/tab-rest-name.html',
         controller: 'restNameController'
       }
     }

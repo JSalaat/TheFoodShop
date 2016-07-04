@@ -89,3 +89,9 @@ ion-content{
     float: right;
     margin-right: -40px !important;
 }
+.removeLinkBtn{
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    top: 0;
+}

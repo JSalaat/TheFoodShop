@@ -2,20 +2,25 @@
  * Created by M.JUNAID on 2015-03-10.
  */
 
-foodShop.controller('cartController', function($scope, $rootScope, $cordovaToast) {
-    //.controller('cartController', function($scope, $rootScope ) {
-    $scope.cart = $rootScope.cart;
-    $scope.total = 0;
+foodShop.controller('cartController', function($scope, cartFactory, $cordovaToast) {
 
-    console.log($scope.cart);
+    $scope.cart = cartFactory.getCartData();
+    $scope.total = getTotal();
 
-    for (var i = 0 ; i < $scope.cart.length; i++){
-        if($scope.cart[i].price){
-            $scope.total = $scope.total + $scope.cart[i].price;
-        }
-        console.log($scope.cart[i].price);
-
+    function getTotal (){
+        var total = 0;
+        $scope.cart.forEach(function (item) {
+            if(item.price){
+                total = total + item.price;
+            }
+        });
+        return total
     }
+
+    $scope.removeItem = function(index){
+        cartFactory.removeItem(index);
+        $scope.total = getTotal();
+    };
 
     $scope.showTotals = function(){
         $cordovaToast.show('Your Total is '+$scope.total, 'long', 'bottom')
@@ -26,5 +31,5 @@ foodShop.controller('cartController', function($scope, $rootScope, $cordovaToast
             });
     }
 
-})
+});
 
