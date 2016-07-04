@@ -6,10 +6,10 @@
         Your Cart
       </div>
       <div class="item item-text-wrap themeBg" ng-repeat="item in cart track by $index">
-        <div class="icon-right light">
-          Remove <i class="ion-close-circled "></i>
+        <div class="icon-right light removeLinkBtn" ng-click="removeItem($index)">
+          Remove Item <i class="ion-close-circled "></i>
         </div>
-        <div class="item">
+        <div class="item themeBg" style="margin-top: 5px;">
           <div class="whiteColor">
             Item {{$index+1}}: {{item.dish_n}}
           </div>
@@ -24,10 +24,10 @@
           <i class="icon ion-fork whiteColor"></i>
 
           <span class="item-note assertive text-left col">
-            Your Total
+            Checkout
           </span>
           <strong class="item-note whiteColor ng-binding text-right" style="font-size: medium;">
-            {{total}} Rs
+            Your Total {{total}} Rs
           </strong>
         </a>
       </div>
