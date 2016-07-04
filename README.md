@@ -4,7 +4,12 @@
 >With Facebook SignIn Integration and local auth login system.<br />
 >Changes occur real time.<br />
 >An Ionic framework/cordova project.<br />
->Backend implemention on firebase.
+>Backend implemention on firebase.<br />
+
+
+---
+Please feel free to report an **Issue** or ask for a **feature** that you want to see in this project <br/> Or a **Pull Request** would be welcome.
+
 
 # Screen Shots of the App
 
