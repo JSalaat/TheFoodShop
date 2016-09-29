@@ -28,7 +28,7 @@ Please feel free to report an **Issue** or ask for a **feature** that you want t
 ## Installation
 Clone this repository
 ```bash
-$ git clone https://github.com/jsalaat/TheFoodShop.git
+$ git clone https://github.com/mjunaidsalaat/TheFoodShop.git
 $ cd TheFoodShop
 $ bower install
 
