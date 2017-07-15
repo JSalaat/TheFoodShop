@@ -13,11 +13,8 @@ Please feel free to report an **Issue** or ask for a **feature** that you want t
 
 # Screen Shots of the App
 
-<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/splash.jpg" width="250" />
-<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/login.jpg" width="250" />
-<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/main.jpg" width="250"  />
-<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/main2.jpg" width="250"  />
-<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/last%20checkout.jpg" width="250" />
+<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/splash.jpg" width="250" /> <img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/login.jpg" width="250" /> <img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/main.jpg" width="250"  />
+<img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/main2.jpg" width="250"  /> <img src="https://raw.githubusercontent.com/mjunaidsalaat/TheFoodShop/master/screens/last%20checkout.jpg" width="250" />
 
 ## Pre Requisites 
 1.	Node.js
