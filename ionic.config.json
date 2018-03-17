@@ -1,0 +1,12 @@
+{
+  "name": "TheFoodShop",
+  "app_id": "mjunaidsalaat",
+  "integrations": {},
+  "type": "ionic1",
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
